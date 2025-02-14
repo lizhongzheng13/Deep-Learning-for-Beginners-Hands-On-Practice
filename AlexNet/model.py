@@ -6,7 +6,6 @@ from torchsummary import summary
 import torch.nn.functional as F
 
 
-
 # 我们使用的例子是单通道的
 class AlexNet(nn.Module):
     def __init__(self):
@@ -19,4 +18,3 @@ class AlexNet(nn.Module):
         self.conv5 = nn.Conv2d(in_channels=256, out_channels=384, kernel_size=3, padding=1)
         self.conv6 = nn.Conv2d(in_channels=384, out_channels=384, kernel_size=3, padding=1)
         self.conv7 = nn.Conv2d(in_channels=384, out_channels=256, kernel_size=3, padding=1)
-
