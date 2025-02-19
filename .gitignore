@@ -1,2 +1,3 @@
 # .gitignore
-AlexNet/best_model.pth
+**/*.pth
+data/
