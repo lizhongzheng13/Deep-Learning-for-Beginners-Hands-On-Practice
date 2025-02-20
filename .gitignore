@@ -1,3 +1,5 @@
-# .gitignore
-**/*.pth
+# 忽略所有子文件夹中的 data 文件夹
 **/data/
+
+# 忽略所有 .pth 文件
+*.pth
