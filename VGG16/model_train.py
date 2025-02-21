@@ -175,7 +175,7 @@ def matplot_acc_loss(train_process):
 
 if __name__ == '__main__':
     # 将我们的模型实例化
-    LeNet = VGG16()
+    VGG16 = VGG16()
     train_dataloader, val_dataloader = train_val_data_process()
-    train_process = train_model_process(LeNet, train_dataloader, val_dataloader, 20)
+    train_process = train_model_process(VGG16, train_dataloader, val_dataloader, 20)
     matplot_acc_loss(train_process)

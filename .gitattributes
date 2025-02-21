@@ -1,2 +1,4 @@
 data/* filter=lfs diff=lfs merge=lfs -text
 *.pth filter=lfs diff=lfs merge=lfs -text
+path/to/your/model filter=lfs diff=lfs merge=lfs -text
+D:/python-mangshe/pythonProject1/炮哥深度学习入门教程/AlexNet/model.py filter=lfs diff=lfs merge=lfs -text

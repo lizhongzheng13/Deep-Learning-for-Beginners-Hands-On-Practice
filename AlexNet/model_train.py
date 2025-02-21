@@ -176,7 +176,7 @@ def matplot_acc_loss(train_process):
 
 if __name__ == '__main__':
     # 将我们的模型实例化
-    LeNet = AlexNet()
+    AlexNet = AlexNet()
     train_data, val_data = train_val_data_process()
-    train_process = train_model_process(LeNet, train_data, val_data, 20)
+    train_process = train_model_process(AlexNet, train_data, val_data, 20)
     matplot_acc_loss(train_process)
