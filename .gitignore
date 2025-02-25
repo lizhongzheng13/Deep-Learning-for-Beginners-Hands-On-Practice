@@ -7,4 +7,8 @@
 # 忽略 Rice_Image_Dataset 文件夹
 **/Rice_Image_Dataset/
 
+# 忽略所有子文件夹中的 dataset 文件夹
 **/dataset/
+
+# 忽略 data_cat_dog 文件夹
+**/data_cat_dog/
