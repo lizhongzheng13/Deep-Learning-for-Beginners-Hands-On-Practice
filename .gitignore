@@ -5,6 +5,6 @@
 *.pth
 
 # 忽略 Rice_Image_Dataset 文件夹
-Rice_Image_Dataset/
+**/Rice_Image_Dataset/
 
-data_cat_dog/
+**/dataset/
