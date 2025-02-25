@@ -18,9 +18,9 @@ import pandas as pd
 # 处理训练集和验证集
 def train_val_data_process():
     # 定义数据集的路径
-    ROOT_TRAIN = r"D:\python-mangshe\pythonProject1\炮哥深度学习入门教程\Classification of Cats and Dogs\data\train"
+    ROOT_TRAIN = r"./data/train"
 
-    normalize = transforms.Normalize(mean=[0.162, 0.151, 0.138], std=[0.058, 0.052, 0.048])
+    normalize = transforms.Normalize([0.22890568, 0.19639583, 0.1433638], [0.09928422, 0.08263004, 0.06472758])
     # 定义数据集处理方法变量
     train_transform = transforms.Compose([transforms.Resize((224, 224)), transforms.ToTensor()])
 
@@ -53,7 +53,7 @@ train_dataloader, val_dataloader = train_val_data_process()
 def train_model_process(model, train_dataloader, val_dataloader, num_epochs):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     # 优化器：梯度下降的优化版
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.0001)
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
     # 交叉熵损失函数：一般用于分类任务中~
     criterion = nn.CrossEntropyLoss()
     # 将模型放到训练设备中
@@ -192,5 +192,5 @@ if __name__ == '__main__':
     # 将我们的模型实例化
     GoogLeNet = GoogLeNet(Inception)
     train_data, val_data = train_val_data_process()
-    train_process = train_model_process(GoogLeNet, train_data, val_data, 55)
+    train_process = train_model_process(GoogLeNet, train_data, val_data, 50)
     matplot_acc_loss(train_process)

@@ -10,7 +10,7 @@ def mkfile(file):
 
 
 # 获取data文件夹下所有文件夹名（即需要分类的类名）
-file_path = 'data_cat_dog'
+file_path = 'fruits'
 flower_class = [cla for cla in os.listdir(file_path)]
 
 # 创建 训练集train 文件夹，并由类名在其目录下创建5个子目录

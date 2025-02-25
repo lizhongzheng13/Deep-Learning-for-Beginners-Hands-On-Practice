@@ -5,7 +5,7 @@ import numpy as np
 # 计算图像数据集中所有图像的像素值的均值（Mean）和方差（Variance）
 
 # 文件夹路径，包含所有图片文件
-folder_path = 'data_cat_dog'
+folder_path = 'fruits'
 
 # 初始化累积变量
 total_pixels = 0
