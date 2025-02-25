@@ -3,3 +3,6 @@
 
 # 忽略所有 .pth 文件
 *.pth
+
+# 忽略 Rice_Image_Dataset 文件夹
+Rice_Image_Dataset/
