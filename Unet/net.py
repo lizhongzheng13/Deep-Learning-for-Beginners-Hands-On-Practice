@@ -3,8 +3,7 @@
 import torch
 from torch import nn
 from torch.nn import functional as F
-
-from 深度学习入门.测试环境 import device
+from torchsummary import summary
 
 
 class Conv_Block(nn.Module):
@@ -101,6 +100,7 @@ class Unet(nn.Module):
 
 
 if __name__ == '__main__':
-    x = torch.randn(2, 3, 256, 256)  # 两个批次，3个通道，图像的大小为 256×256 像素
-    net = Unet(num_classes=3)
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    x = torch.randn(2, 3, 256, 256).to(device)  # 两个批次，3个通道，图像的大小为 256×256 像素
+    net = Unet(num_classes=3).to(device)
     print(net(x).shape)

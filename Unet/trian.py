@@ -18,7 +18,7 @@ def train_model():
     data_path = r'D:\BaiduNetdiskDownload\UnetData\VOCdevkit\VOC2012'
     save_path = 'train_image'
 
-    num_classes = 3
+    num_classes = 3  # 三分类
 
     data_loader = DataLoader(MyDataset(data_path), batch_size=4, shuffle=True)
     net = Unet(num_classes).to(device)
