@@ -1,6 +1,6 @@
 # @Author : LiZhongzheng
 # 开发时间  ：2025-02-28 21:46
-from sympy.core.random import shuffle
+
 from torch import nn, optim
 import torch
 from data import *
