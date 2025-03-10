@@ -140,7 +140,7 @@ def train_model_process(model, train_dataloader, val_dataloader, num_epochs):
     # pth是权重模型的后缀
     # model.state_dict(best_model_wts)
     torch.save(best_model_wts,
-               'D:/python-mangshe/pythonProject1/炮哥深度学习入门教程/LeNet/best_model.pth')
+               'D:/python-mangshe/pythonProject1/深度学习入门教程/LeNet/best_model.pth')
 
     train_process = pd.DataFrame(data={
         "epoch": range(num_epochs),
