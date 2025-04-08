@@ -2,19 +2,19 @@
 
 > 生成器和判别器是亦敌亦友的关系
 
-<img src="img_1.png" alt="img_1.png" style="zoom:33%;" />
+<img src="https://lzz-1340752507.cos.ap-shanghai.myqcloud.com/lzz/image-20250317200010333.png" alt="image-20250317200010333" style="zoom: 67%;" />
 
 对于生成模型，损失函数很难定义->所以我们可以将生成模型的输出交给判别模型进行处理，来分辨好坏。
 
-<img src="img_2.png" alt="img_2.png" style="zoom:33%;" />
+<img src="https://lzz-1340752507.cos.ap-shanghai.myqcloud.com/lzz/image-20250317200035568.png" alt="image-20250317200035568" style="zoom: 67%;" />
 
-<img src="img_3.png" alt="img_3.png" style="zoom:33%;" />
+<img src="https://lzz-1340752507.cos.ap-shanghai.myqcloud.com/lzz/image-20250317200051392.png" alt="image-20250317200051392" style="zoom:67%;" />
 
 
 
 > 生成器的损失是通过判别器的输出来计算的，而判别器的输出是一个概率值，我们可以通过交叉熵计算。
 
-<img src="img_4.png" alt="img_4.png" style="zoom:33%;" />
+![image-20250317200116968](https://lzz-1340752507.cos.ap-shanghai.myqcloud.com/lzz/image-20250317200116968.png)
 
 > x：表示真实图片；z：表示输入G网络的噪声；G(z)：表示G网络生成的图片；D(*)：表示D网络判断图片是否真实的概论
 

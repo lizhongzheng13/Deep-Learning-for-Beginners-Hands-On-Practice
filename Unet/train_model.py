@@ -15,6 +15,7 @@ def train():
     data_path = r"D:\BaiduNetdiskDownload\UnetData\VOCdevkit\VOC2012"
     save_img_path = r'./train_img'
 
+
     # Create the directory if it doesn't exist
     if not os.path.exists(save_img_path):
         os.makedirs(save_img_path)
