@@ -8,13 +8,13 @@
 
 <img src="https://lzz-1340752507.cos.ap-shanghai.myqcloud.com/lzz/image-20250317200035568.png" alt="image-20250317200035568" style="zoom: 67%;" />
 
-<img src="https://lzz-1340752507.cos.ap-shanghai.myqcloud.com/lzz/image-20250317200051392.png" alt="image-20250317200051392" style="zoom:67%;" />
+<img src="https://lzz-1340752507.cos.ap-shanghai.myqcloud.com/lzz/image-20250429215113729.png" alt="image-20250429215113729" style="zoom:67%;" />
 
 
 
 > 生成器的损失是通过判别器的输出来计算的，而判别器的输出是一个概率值，我们可以通过交叉熵计算。
 
-![image-20250317200116968](https://lzz-1340752507.cos.ap-shanghai.myqcloud.com/lzz/image-20250317200116968.png)
+![image-20250429215101936](https://lzz-1340752507.cos.ap-shanghai.myqcloud.com/lzz/image-20250429215101936.png)
 
 > x：表示真实图片；z：表示输入G网络的噪声；G(z)：表示G网络生成的图片；D(*)：表示D网络判断图片是否真实的概论
 
